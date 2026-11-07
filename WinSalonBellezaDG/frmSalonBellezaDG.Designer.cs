@@ -49,6 +49,7 @@
             this.btnCalcularCuentaDG = new System.Windows.Forms.Button();
             this.btnLimpiarDG = new System.Windows.Forms.Button();
             this.pnlResultadoDG = new System.Windows.Forms.Panel();
+            this.tlpResultadoDG = new System.Windows.Forms.TableLayoutPanel();
             this.lblCuentaTituloDG = new System.Windows.Forms.Label();
             this.lblTotalServiciosDG = new System.Windows.Forms.Label();
             this.lblTotalServiciosValorDG = new System.Windows.Forms.Label();
@@ -235,52 +236,74 @@
             this.pnlResultadoDG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlResultadoDG.Margin = new System.Windows.Forms.Padding(10, 8, 3, 3);
             this.pnlResultadoDG.Padding = new System.Windows.Forms.Padding(18);
-            this.lblCuentaTituloDG.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblCuentaTituloDG.Height = 60;
             this.lblCuentaTituloDG.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblCuentaTituloDG.ForeColor = System.Drawing.Color.FromArgb(214, 51, 132);
-            this.lblCuentaTituloDG.Location = new System.Drawing.Point(18, 18);
             this.lblTotalServiciosDG.Text = "Total Servicios:";
             this.lblTotalServiciosDG.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblTotalServiciosDG.ForeColor = System.Drawing.Color.FromArgb(74, 20, 50);
-            this.lblTotalServiciosDG.Location = new System.Drawing.Point(20, 95);
-            this.lblTotalServiciosDG.AutoSize = true;
             this.lblTotalServiciosValorDG.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
             this.lblTotalServiciosValorDG.ForeColor = System.Drawing.Color.FromArgb(74, 20, 50);
             this.lblTotalServiciosValorDG.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblTotalServiciosValorDG.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            this.lblTotalServiciosValorDG.Bounds = new System.Drawing.Rectangle(160, 92, 180, 26);
             this.lblTotalOtrosDG.Text = "Total Otros:";
             this.lblTotalOtrosDG.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblTotalOtrosDG.ForeColor = System.Drawing.Color.FromArgb(74, 20, 50);
-            this.lblTotalOtrosDG.Location = new System.Drawing.Point(20, 135);
-            this.lblTotalOtrosDG.AutoSize = true;
             this.lblTotalOtrosValorDG.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold);
             this.lblTotalOtrosValorDG.ForeColor = System.Drawing.Color.FromArgb(74, 20, 50);
             this.lblTotalOtrosValorDG.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblTotalOtrosValorDG.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            this.lblTotalOtrosValorDG.Bounds = new System.Drawing.Rectangle(160, 132, 180, 26);
             this.lblSuCuentaDG.Text = "SU CUENTA ES:";
             this.lblSuCuentaDG.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.lblSuCuentaDG.ForeColor = System.Drawing.Color.White;
             this.lblSuCuentaDG.BackColor = System.Drawing.Color.FromArgb(214, 51, 132);
             this.lblSuCuentaDG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblSuCuentaDG.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            this.lblSuCuentaDG.Bounds = new System.Drawing.Rectangle(18, 185, 322, 48);
             this.lblSuCuentaDG.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.lblSuCuentaValorDG.Font = new System.Drawing.Font("Consolas", 16F, System.Drawing.FontStyle.Bold);
+            this.lblSuCuentaValorDG.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold);
             this.lblSuCuentaValorDG.ForeColor = System.Drawing.Color.White;
             this.lblSuCuentaValorDG.BackColor = System.Drawing.Color.FromArgb(214, 51, 132);
             this.lblSuCuentaValorDG.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblSuCuentaValorDG.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            this.lblSuCuentaValorDG.Bounds = new System.Drawing.Rectangle(160, 190, 175, 38);
-            this.pnlResultadoDG.Controls.Add(this.lblSuCuentaValorDG);
-            this.pnlResultadoDG.Controls.Add(this.lblSuCuentaDG);
-            this.pnlResultadoDG.Controls.Add(this.lblTotalOtrosValorDG);
-            this.pnlResultadoDG.Controls.Add(this.lblTotalOtrosDG);
-            this.pnlResultadoDG.Controls.Add(this.lblTotalServiciosValorDG);
-            this.pnlResultadoDG.Controls.Add(this.lblTotalServiciosDG);
-            this.pnlResultadoDG.Controls.Add(this.lblCuentaTituloDG);
+            this.lblCuentaTituloDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCuentaTituloDG.AutoSize = false;
+            this.lblCuentaTituloDG.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTotalServiciosDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTotalServiciosDG.AutoSize = false;
+            this.lblTotalServiciosDG.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTotalServiciosValorDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTotalServiciosValorDG.AutoSize = false;
+            this.lblTotalServiciosValorDG.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTotalOtrosDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTotalOtrosDG.AutoSize = false;
+            this.lblTotalOtrosDG.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTotalOtrosValorDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTotalOtrosValorDG.AutoSize = false;
+            this.lblTotalOtrosValorDG.Margin = new System.Windows.Forms.Padding(0);
+            this.lblSuCuentaDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSuCuentaDG.AutoSize = false;
+            this.lblSuCuentaDG.Margin = new System.Windows.Forms.Padding(0);
+            this.lblSuCuentaValorDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSuCuentaValorDG.AutoSize = false;
+            this.lblSuCuentaValorDG.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCuentaTituloDG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTotalServiciosDG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTotalOtrosDG.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tlpResultadoDG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpResultadoDG.BackColor = System.Drawing.Color.White;
+            this.tlpResultadoDG.ColumnCount = 2;
+            this.tlpResultadoDG.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpResultadoDG.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpResultadoDG.RowCount = 5;
+            this.tlpResultadoDG.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tlpResultadoDG.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlpResultadoDG.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tlpResultadoDG.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tlpResultadoDG.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpResultadoDG.Controls.Add(this.lblCuentaTituloDG, 0, 0);
+            this.tlpResultadoDG.SetColumnSpan(this.lblCuentaTituloDG, 2);
+            this.tlpResultadoDG.Controls.Add(this.lblTotalServiciosDG, 0, 1);
+            this.tlpResultadoDG.Controls.Add(this.lblTotalServiciosValorDG, 1, 1);
+            this.tlpResultadoDG.Controls.Add(this.lblTotalOtrosDG, 0, 2);
+            this.tlpResultadoDG.Controls.Add(this.lblTotalOtrosValorDG, 1, 2);
+            this.tlpResultadoDG.Controls.Add(this.lblSuCuentaDG, 0, 3);
+            this.tlpResultadoDG.Controls.Add(this.lblSuCuentaValorDG, 1, 3);
+            this.pnlResultadoDG.Controls.Add(this.tlpResultadoDG);
             //
             // grpHistorialDG
             //
@@ -421,6 +444,9 @@
 
         /// <summary>Panel de la cuenta.</summary>
         private System.Windows.Forms.Panel pnlResultadoDG;
+
+        /// <summary>Distribución del panel de la cuenta.</summary>
+        private System.Windows.Forms.TableLayoutPanel tlpResultadoDG;
 
         /// <summary>Título CUENTA [nombre].</summary>
         private System.Windows.Forms.Label lblCuentaTituloDG;
